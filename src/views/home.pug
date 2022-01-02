@@ -14,4 +14,18 @@ block content
         p <span id="about-subtitle" >Technologies I use:</span> Express.js,Node.js,Postman,Linux(Ubuntu),Heroku,Google Cloud Platform
       figure
   section#projects 
+    div: h3.subtitle > Projects
+    section
+      - 
+        const namesOfProjects = ["chatbot Pizzeria Elarenti","Agend Contact","Ecommerce Ksi"]
+      each project in namesOfProjects
+        a(href="#")= "> "+project 
+    article 
+      - 
+        const myTecnologiesFavorites = ["chrome","github","gnu-bash","heroku","java","linux","nodejs"]
+      each tecnology in myTecnologiesFavorites 
+        figure
+          img(src=`/public/images/${tecnology}.png`, width="50",height="50",alt=`${tecnology}`, srcset="")
+     
+
    
