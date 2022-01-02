@@ -2,11 +2,16 @@ extends ./layout.pug
 
 block content
   header#home
-    figure
-      img(src="", alt=" You programming code ")
     div
-      h2 Hello, I´m PieroDev backend developer
-  section#about
-    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam in non neque sed veritatis reiciendis laboriosam repudiandae, corrupti modi omnis!
+      h2 > Hello, I´m PieroDev, Backend Developer
+    figure
+      img(src="public/images/feeling-proud.svg", alt=" You programming code ", width="500",height="500") 
+  section#about 
+    div: h3.subtitle > About Me
+    section
+      article
+        p Hi I'm piero, software engineering student, I love to enjoy the beach, do sports (soccer, tennis), cook and listen to music of the rock and blues genre. 
+        p <span id="about-subtitle" >Technologies I use:</span> Express.js,Node.js,Postman,Linux(Ubuntu),Heroku,Google Cloud Platform
+      figure
   section#projects 
    
