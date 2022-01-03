@@ -170,6 +170,7 @@ nav ul {
 #projects > div {
   width: 100%;
   height: 10vh;
+  padding: 1rem;
 }
 #projects > section {
   width: 100%;
@@ -194,7 +195,38 @@ nav ul {
 /* SECTION CONTACT*/
 #contact {
   width: 100%;
-  height: 100rem;
-  background-color: lightgray;
+  height: 100vh;
+  background-color:#3f3d56 ;
   overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#contact > article {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color:var(--font-secondary)
+}
+#contact > article > h3,
+#contact > article > p {
+  color: var(--color-secondary);
+}
+.bi-facebook,
+.bi-youtube,
+.bi-instagram {
+  cursor: pointer;
+  transition: all 300ms ease-in 0s;
+}
+
+.bi-facebook:hover,
+.bi-youtube:hover,
+.bi-instagram:hover {
+  color: white;
 }
